@@ -43,7 +43,7 @@
       </el-form>
     </el-card>
 
-    <!-- <el-card shadow="never" class="table-card">
+    <el-card shadow="never" class="table-card">
       <el-table
         v-loading="loading"
         :data="tableData"
@@ -78,7 +78,7 @@
           @size-change="handleSizeChange"
         />
       </div>
-    </el-card> -->
+    </el-card>
   </div>
 </template>
 
@@ -189,23 +189,49 @@ onMounted(() => {
 
 <style scoped>
 .page {
-  padding: 20px;
+  min-height: 100%;
+  padding: 24px;
   max-width: 1280px;
   margin: 0 auto;
 }
 
+.page-header {
+  text-align: center;
+}
+
 .page-title {
-  margin: 0 0 16px;
-  font-size: 20px;
+  margin: 0 0 20px;
+  font-size: 22px;
   font-weight: 600;
+  color: #3a4a63;
+  letter-spacing: 1px;
 }
 
 .filter-card {
   margin-bottom: 16px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 6px 20px rgba(120, 150, 200, 0.12);
+}
+
+.filter-card :deep(.el-form--inline) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.filter-card :deep(.el-form-item) {
+  margin-bottom: 8px;
 }
 
 .table-card {
   margin-bottom: 16px;
+  border: none;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 6px 20px rgba(120, 150, 200, 0.12);
 }
 
 :deep(.el-table__row) {

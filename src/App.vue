@@ -19,7 +19,8 @@ body,
 
 body {
   font-family: 'Helvetica Neue', Helvetica, 'PingFang SC', 'Microsoft YaHei', Arial, sans-serif;
-  background-color: #f5f7fa;
+  background: linear-gradient(135deg, #eef4ff 0%, #f7f9fc 45%, #eafaf3 100%);
+  background-attachment: fixed;
   color: #303133;
 }
 </style>
