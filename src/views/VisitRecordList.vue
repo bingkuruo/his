@@ -43,7 +43,7 @@
       </el-form>
     </el-card>
 
-    <el-card shadow="never" class="table-card">
+    <!-- <el-card shadow="never" class="table-card">
       <el-table
         v-loading="loading"
         :data="tableData"
@@ -78,7 +78,7 @@
           @size-change="handleSizeChange"
         />
       </div>
-    </el-card>
+    </el-card> -->
   </div>
 </template>
 
